@@ -1,0 +1,26 @@
+version: "3"
+
+# No ready yet...
+
+services:
+  web:
+    image: "nginx"
+    ports:
+      - "8000:80"
+    networks:
+      vpcbr:
+        ipv4_address: 10.5.0.5
+  rawsocket:
+    image: rawsocket:latest
+    networks:
+      vpcbr:
+        ipv4_address: 10.5.0.6
+    depends_on:
+      - web
+
+networks:
+  vpcbr:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.5.0.0/16
