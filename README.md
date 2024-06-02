@@ -47,7 +47,7 @@ Start the test:
 ❯ sudo ~/.sdkman/candidates/java/22.0.1-oracle/bin/java \                                                                                                            
         --enable-preview \                                                                                           
         --enable-native-access=ALL-UNNAMED \                                                               
-        -jar ./target/foreign-function-jar-with-dependencies.jar
+        ./target/java-rawsocket-ff-jar-with-dependencies.jar
 ```
 
 Out example:
@@ -101,7 +101,7 @@ Start a Web server to simulate the endpoint. As example:
 Start the test:
 
 ```bash
-❯ sudo java -jar ./target/java-rawsocket.jar
+❯ sudo java -jar ./target/java-rawsocket-jni.jar
 ```
 
 The default values used in the [SocketTester](jni/src/main/java/com/reservoircode/net/SocketTester.java) are:
