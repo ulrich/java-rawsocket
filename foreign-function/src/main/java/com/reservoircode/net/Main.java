@@ -44,6 +44,7 @@ public class Main implements Callable<Integer> {
     }
 
     public static void main(String... args) {
-        System.exit(new CommandLine(new Main()).execute(args));
+        System.exit(new CommandLine(new Main())
+                .execute(args));
     }
 }

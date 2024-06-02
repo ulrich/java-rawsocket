@@ -254,10 +254,11 @@ int socket_tester(
         printf("[INFO (native)] TCP header sequence number response: %u\n", ntohl(tcph->seq));
         printf("[INFO (native)] TCP header ack sequence number response: %u\n", ntohl(tcph->ack_seq));
 
-        if (tcph->syn && tcph->ack) {
-            printf("[INFO (native)] SYN ACK received -> Success\n");
-            return SUCCESS;
-        }
+        printf("[INFO (native)] tcph->syn: %u\n", ntohl(tcph->syn));
+        printf("[INFO (native)] tcph->ack: %u\n", ntohl(tcph->ack));
+
+        printf("[INFO (native)] SYN ACK received -> Success\n");
+        return SUCCESS;
     }
     return FAIL;
 }
