@@ -8,7 +8,7 @@ the [JNI](https://docs.oracle.com/javase/8/docs/technotes/guides/jni/spec/jniTOC
 second one is based on
 the [Foreign Function](https://docs.oracle.com/en/java/javase/22/core/foreign-function-and-memory-api.html).
 
-(ℹ️) The using C code wasn't write by me, but it's plan I shall rewrite it from scratch.
+ℹ️ The used C code wasn't write by me, but it's plan I shall rewrite it from scratch.
 
 ## The Foreign Function implementation
 
