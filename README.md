@@ -10,6 +10,8 @@ the [Foreign Function](https://docs.oracle.com/en/java/javase/22/core/foreign-fu
 
 ℹ️ The used C code wasn't written by me, but it's plan I shall rewrite it from scratch.
 
+ℹ️ You find out the full article aboute this code on [dev.to/ulrich](https://dev.to/ulrich/playing-with-the-embryonic-connections-in-java-with-the-foreign-function-24k7)
+
 ## The Foreign Function implementation
 
 ### Build
